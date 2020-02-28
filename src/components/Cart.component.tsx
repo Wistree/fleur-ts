@@ -12,17 +12,17 @@ export const CartBox = styled.div`
 `
 
 export const CartIcon = styled.img.attrs({
-  src: `${ shoppingCart }`,
+  src: `${shoppingCart}`,
 })`
-width: 20px;
-height: 20px;
-padding-right: 5px;
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
 `
 
-const Cart: React.FC<ICartProps> = ({cartCount}) => (
+const Cart: React.FC<ICartProps> = ({ cartCount }) => (
   <CartBox>
     <CartIcon />
-    <text style={{paddingTop: "2px"}}>{cartCount}</text>
+    <text style={{ paddingTop: "2px" }}>{cartCount}</text>
   </CartBox>
 )
 
