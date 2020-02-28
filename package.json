@@ -4,32 +4,28 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "4.2.4",
-    "@testing-library/react": "9.4.1",
     "@testing-library/user-event": "7.2.1",
     "@types/jest": "24.9.1",
     "@types/node": "12.12.28",
     "@types/react": "16.9.23",
     "@types/react-dom": "16.9.5",
-    "@typescript-eslint/eslint-plugin": "2.21.0",
-    "@typescript-eslint/parser": "2.21.0",
-    "eslint": "6.8.0",
-    "eslint-config-prettier": "6.10.0",
-    "eslint-plugin-prettier": "3.1.2",
-    "eslint-plugin-react": "7.18.3",
-    "prettier": "1.19.1",
+    "@types/styled-components": "4.1.18",
+    "@types/styled-system": "5.1.1",
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-scripts": "3.4.0",
-    "styled-components": "^5.0.1",
-    "styled-system": "^5.1.5",
+    "styled-components": "5.0.1",
+    "styled-system": "5.1.5",
     "typescript": "3.7.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "type-check": "tsc -p ./tsconfig.json",
     "eject": "react-scripts eject",
-    "lint": "lint-staged"
+    "pretty": "prettier 'src/**/*.js' --write",
+    "lint": "tslint -p ./tsconfig.json -c ./tslint.json --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,7 +42,22 @@
       "last 1 safari version"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pretty && npm run lint -- --fix"
+    }
+  },
   "devDependencies": {
-    
+    "@babel/core": "7.8.6",
+    "@testing-library/react": "9.4.1",
+    "babel-eslint": "10.0.2",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.18.3",
+    "husky": "3.0.4",
+    "prettier": "1.19.1",
+    "tslint": "5.20.0",
+    "tslint-react-hooks": "2.2.1"
   }
 }
