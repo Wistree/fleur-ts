@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./NavHeader.component"
+import "./NavHeader/NavHeader.component"
 
 interface IHeaderProps {
   logo: string
