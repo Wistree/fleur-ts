@@ -13,7 +13,7 @@
   "rulesDirectory": [],
   "linterOptions": {
     "exclude": [
-      "**/service-worker.js"
+      "**/service-worker.ts"
     ]
   }
 }

@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "type-check": "tsc -p ./tsconfig.json",
     "eject": "react-scripts eject",
-    "pretty": "prettier 'src/**/*.js' --write",
+    "pretty": "prettier --write \"src/**/**.{js,jsx,ts,tsx}\"",
     "lint": "tslint -p ./tsconfig.json -c ./tslint.json --fix"
   },
   "eslintConfig": {
