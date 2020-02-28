@@ -20,7 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Sample text="hi"/>
+      <Sample text="hi" onClick={() => console.log('hi')}/>
     </div>
   );
 }

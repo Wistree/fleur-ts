@@ -2,7 +2,7 @@ import React from 'react';
 
 interface IProps {
   text: string
-  onClick?: () => null
+  onClick: () => void
   true?: boolean
 }
 
