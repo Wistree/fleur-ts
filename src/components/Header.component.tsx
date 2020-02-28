@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react"
 
-import './Nav-Header.component';
+import "./Nav-Header.component"
 
 interface IHeaderProps {
   logo: string
@@ -11,21 +11,26 @@ interface IHeaderProps {
   navHeader: React.ReactNode
 }
 
-const Header: React.FC<IHeaderProps> = ({ logo, watchLink, warrantyLink, distributorLink, aboutLink, navHeader }) => {
+const Header: React.FC<IHeaderProps> = ({
+  logo,
+  watchLink,
+  warrantyLink,
+  distributorLink,
+  aboutLink,
+  navHeader,
+}) => {
   return (
     <div>
+      <div>{navHeader}</div>
+      <img src={logo} />
       <div>
-        {navHeader}
-      </div>
-      <img src = {logo} />
-      <div>
-        <a href = {watchLink}> Timepieces </a>
-        <a href = {warrantyLink}> Warranty </a>
-        <a href = {distributorLink}> Distributors </a>
-        <a href = {aboutLink}> About Us </a>
+        <a href={watchLink}> Timepieces </a>
+        <a href={warrantyLink}> Warranty </a>
+        <a href={distributorLink}> Distributors </a>
+        <a href={aboutLink}> About Us </a>
       </div>
     </div>
   )
-};
+}
 
-export default Header;
+export default Header

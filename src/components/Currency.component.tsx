@@ -1,8 +1,8 @@
 import React from "react"
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const DropBtn = styled.button`
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -16,7 +16,7 @@ export const DropDown = styled.div`
 `
 
 const Currency = () => (
-  <div className = "dropdown">
+  <div className="dropdown">
     <button className="dropbtn"> Dropdown </button>
     <div className="dropdown-content">
       <a href="#"> USA </a>
