@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react"
 
-import './Cart.component';
-import './Currency.component';
-import './SignInAndSignUp.component';
+import "./Cart.component"
+import "./Currency.component"
+import "./SignInAndSignUp.component"
 
 interface INavHeaderProps {
   cart: React.ReactNode
@@ -16,6 +16,6 @@ const NavHeader: React.FC<INavHeaderProps> = ({ cart, currency, signInAndSignUp 
     {cart}
     {currency}
   </div>
-);
+)
 
-export default NavHeader;
+export default NavHeader

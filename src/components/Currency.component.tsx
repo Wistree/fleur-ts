@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react"
 
-const Currency = () => (
-  <div> Currency </div>
-);
+const Currency = () => <div> Currency </div>
 
-export default Currency;
+export default Currency
