@@ -3,7 +3,7 @@ import logo from "./logo.svg"
 import "./App.css"
 import { Test } from "./components/Test"
 import styled from "styled-components"
-import Currency from './components/Currency.component';
+import Currency from "./components/Currency.component"
 
 export const AppBox = styled.div`
   text-align: center;
