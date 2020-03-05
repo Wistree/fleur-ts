@@ -22,7 +22,7 @@ export const CartIcon = styled.img.attrs({
 const Cart: React.FC<ICartProps> = ({ cartCount }) => (
   <CartBox>
     <CartIcon />
-    <text style={{ paddingTop: "2px" }}>{cartCount}</text>
+    <text style={{ paddingTop: "2px", color: "white" }}>{cartCount}</text>
   </CartBox>
 )
 
