@@ -20,7 +20,7 @@ const Links = styled(Link)`
   line-height: 1.2;
   font-weight: 400;
   &:hover {
-    color: #D7AB6D;
+    color: #d7ab6d;
   }
 `
 
@@ -41,7 +41,7 @@ const PageLinks: React.FC<IPageLinksProps> = ({
 }) => (
   <Router>
     <div style={{ display: "flex", flexDirection: "column", textAlign: "center" }}>
-      <Link to={homeLink} style={{padding: "1rem"}}>
+      <Link to={homeLink} style={{ padding: "1rem" }}>
         <HomeLogo />
       </Link>
       <div>
