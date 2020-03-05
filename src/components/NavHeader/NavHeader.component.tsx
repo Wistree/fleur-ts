@@ -1,8 +1,7 @@
 import React from "react"
-
-import "../Cart.component"
-import "../Currency.component"
-import "../SignInAndSignUp.component"
+import "./Cart.component"
+import "./Currency.component"
+import "./SignInAndSignUp.component"
 
 interface INavHeaderProps {
   cart: React.ReactNode
