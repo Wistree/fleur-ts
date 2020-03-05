@@ -2,22 +2,13 @@ import React from "react"
 import styled from "styled-components"
 
 export const DropBtn = styled.button`
-  background-color: #4caf50;
+  background-color: #000;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
 `
-
-export const DropDown = styled.div`
-  position: relative;
-  display: inline-block;
-  ${DropDownContent}:hover & {
-    display: block;
-  }
-`
-
 export const DropDownContent = styled.div`
   display: none;
   position: absolute;
@@ -28,9 +19,17 @@ export const DropDownContent = styled.div`
   z-index: 1;
 `
 
+export const DropDown = styled.div`
+  position: relative;
+  display: inline-block;
+  &:hover ${DropDownContent} {
+    display: block;
+  }
+`
+
 const Currency = () => (
   <DropDown>
-    <DropBtn> Dropdown </DropBtn>
+    <DropBtn> Currency </DropBtn>
     <DropDownContent>
       <a href="#"> USA </a>
       <a href="#"> AUS </a>
