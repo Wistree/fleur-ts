@@ -1,5 +1,4 @@
 import React from "react"
-
 import "./Cart.component"
 import "./Currency.component"
 import "./SignInAndSignUp.component"
