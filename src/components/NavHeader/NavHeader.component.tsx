@@ -5,8 +5,8 @@ import "./SignInAndSignUp.component"
 
 interface INavHeaderProps {
   cart: React.ReactNode
-  currency: React.ReactNode
-  signInAndSignUp: React.ReactNode
+  currency?: React.ReactNode
+  signInAndSignUp?: React.ReactNode
 }
 
 const NavHeader: React.FC<INavHeaderProps> = ({ cart, currency, signInAndSignUp }) => (
